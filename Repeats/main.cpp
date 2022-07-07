@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 
 int decimal;
-cout << "Ââåäèòå äåñÿòè÷íîîå ÷èñëî"
+cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾"

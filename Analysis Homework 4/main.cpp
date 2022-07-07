@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	const int n = 3;
 	int A
