@@ -6,7 +6,7 @@
 #include<iostream>
 using namespace std;
 
-#define TASK_1
+//#define TASK_1
 //#define TASK_2
 //#define TASK_3
 #define tab "\t"
@@ -16,8 +16,8 @@ void main()
 	setlocale(LC_ALL, "");
 
 #ifdef TASK_1
-	int const A = 3;
-	int const B = 10;
+	int const A = 5;
+	int const B = 5;
 	int Fox[A][B];                     
 	for (int i = 0; i < A; i++)           //заполняем массив случайными числами
 	{                                     //и выводим его на экран
@@ -27,10 +27,8 @@ void main()
 			cout << Fox[i][j] << tab;
 		} cout << endl;
 	} cout << endl;
-	//int buffer;
 	for (int i = 0; i < A; i++)
 	{
-		//int w = i;
 		for (int j = 0; j < B; j++)
 		{
 			int t = j;
@@ -47,14 +45,6 @@ void main()
 					}
 				} t = 0;
 			}
-			/*if (w >= i)
-			{
-				w = 0;
-			}
-			if (w < i)
-			{
-				w++;
-			}*/
 		}
 	}
 
@@ -68,6 +58,45 @@ void main()
 #endif
 
 #ifdef TASK_2
+	int const A = 3;
+	int const B = 3;
+	int arr[A][B];
+
+	//Заполняем массив
+	for (int i = 0; i < A; i++)
+	{
+		for (int j = 0; j < B; j++)
+		{
+			bool unique;            //проверяем уникально ли значение
+            
+			do
+			{
+				arr[i][j] = rand() % 10; //?20
+				unique = true;
+
+				for (int m = 0; m <= i; m++)
+				{
+					for (int k = 0; k < j; k++)
+					{
+						if (arr[i][j] == arr[m][k])
+						{
+							unique = false;
+							break;
+						}
+					}
+				}
+			} while (!unique);
+		}
+	}
+	//вывод массива
+	for (int i = 0; i < A; i++)
+	{
+		for (int j = 0; j < B; j++)
+		{
+			cout << arr[i][j] << tab;
+		}cout << endl;
+	} 
+	
 #endif
 #ifdef TASK_3
 #endif
