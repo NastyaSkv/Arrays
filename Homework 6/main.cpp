@@ -6,7 +6,7 @@
 #include<iostream>
 using namespace std;
 
-//#define TASK_1
+#define TASK_1
 //#define TASK_2
 //#define TASK_3
 #define tab "\t"
@@ -18,7 +18,8 @@ void main()
 #ifdef TASK_1
 	int const A = 5;
 	int const B = 5;
-	int Fox[A][B];                     
+	int Fox[A][B];
+	cout << "Двумерный массив, заполненный случайными числами: " << endl;
 	for (int i = 0; i < A; i++)           //заполняем массив случайными числами
 	{                                     //и выводим его на экран
 		for (int j = 0; j < B; j++)
@@ -32,7 +33,7 @@ void main()
 		for (int j = 0; j < B; j++)
 		{
 			int t = j;
-			for (int w=i; w < A; w++)
+			for (int w = i; w < A; w++)
 			{
 				for (t; t < B; t++)
 				{
@@ -47,7 +48,7 @@ void main()
 			}
 		}
 	}
-
+	cout << endl << "Отсортированный в порядке возрастания массив: " << endl;
 	for (int i = 0; i < A; i++)
 	{
 		for (int j = 0; j < B; j++)
