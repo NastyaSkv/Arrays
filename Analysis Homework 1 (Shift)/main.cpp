@@ -1,4 +1,5 @@
 ﻿#include<iostream>
+//#include<Windows.h>
 using namespace std;
 
 #define tab "\t"
@@ -30,9 +31,12 @@ void main()
 
 
 	//Вывод сдвинутого массива на экран
+	//system("CLS");
+               //функция system() выполняет любую команду командной строки1
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
+	//Sleep(1000);
 }
