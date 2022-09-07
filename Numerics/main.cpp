@@ -1,6 +1,6 @@
-﻿#include<iostream>
+﻿ #include<iostream>
 using namespace std;
-//#define DEC_2_BIN
+#define DEC_2_BIN
 #define Hexadecimal
 #define tab "\t"
 #define br break
